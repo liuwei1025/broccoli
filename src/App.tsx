@@ -144,6 +144,7 @@ function Invitation() {
                         required
                         fullWidth
                         label="Full name"
+                        inputProps={{ 'data-testid': 'name' }}
                         autoFocus
                         error={!!error}
                         helperText={error?.message}
@@ -171,6 +172,7 @@ function Invitation() {
                         required
                         fullWidth
                         label="Email"
+                        inputProps={{ 'data-testid': 'email' }}
                         error={!!error}
                         helperText={error?.message}
                         {...field}
@@ -204,6 +206,7 @@ function Invitation() {
                         required
                         fullWidth
                         label="Confirm email"
+                        inputProps={{ 'data-testid': 'confirm' }}
                         error={!!error}
                         helperText={error?.message}
                         {...field}
