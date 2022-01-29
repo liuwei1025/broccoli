@@ -75,7 +75,7 @@ function Invitation() {
         })
         return res
       } catch (e: any) {
-        return e.response?.data
+        return e.response?.data || { errorMessage: 'Timeout!' }
       }
     },
     { manual: true }
@@ -228,6 +228,7 @@ function Invitation() {
               </Grid>
               {showRemoteError && (
                 <FormHelperText
+                  data-testid="dialog-remote-error"
                   sx={{
                     color: 'error.main',
                     width: '100%',

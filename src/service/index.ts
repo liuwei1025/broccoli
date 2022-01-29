@@ -5,7 +5,7 @@ const service = axios.create({
     process.env.NODE_ENV === 'development'
       ? '/'
       : 'https://l94wc2001h.execute-api.ap-southeast-2.amazonaws.com',
-  timeout: 6e4,
+  timeout: 1e4,
 })
 
 service.interceptors.response.use(
