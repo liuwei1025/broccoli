@@ -24,7 +24,6 @@ function Header() {
       sx={{
         display: 'flex',
         height: 64,
-        boxShadow: '0 2px 5px 1px rgb(64 60 67 / 16%)',
         alignItems: 'center',
       }}
     >
